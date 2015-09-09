@@ -1,0 +1,37 @@
+/*
+    Document   : Indexstyle.css
+    Created on : 2015-09-01 08:09 PM
+    Author     : JeanG
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+h1{
+    text-align:center
+        
+}
+h2{
+    font-size:200%
+}
+#pagetitle{
+/*  position:relative;
+top:75px; */
+padding:10px;
+margin-top:70px;
+}
+#first-sentence{
+    position:relative;
+    top:60px
+        padding:10px
+        margin-bottom:10px;
+}
+#first-sentence{
+    font-family:times
+}
+#intro{
+    
+}
+p{
+    
+}
