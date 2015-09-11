@@ -8,11 +8,27 @@
 */
 
 #navbar{
-    text-align:center;
+    text-align:left;
+    top:;
 }
 #navbar li{
-    display;inline-block
-    border:2px solid red
+    display:inline-block
+    border:2
+        10px solid red
         padding:10px
-        background-color:purple;
+        background-color:red
 }
+li{
+        display:inline;   
+}
+#navbar{
+    color:white
+        top:150px;
+}
+navbar-fixed-bottom {
+	  border-
+	}
+
+
+
+
