@@ -26,8 +26,11 @@ li{
         top:150px;
 }
 navbar-fixed-bottom {
-	  border-
+	  border
 	}
+#navbar{
+    display:block
+}
 
 
 
