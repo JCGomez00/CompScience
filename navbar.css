@@ -1,0 +1,37 @@
+/*
+    Document   : navbar.css
+    Created on : 2015-09-08 10:00 PM
+    Author     : JeanG
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+#navbar{
+    text-align:left;
+    top:;
+}
+#navbar li{
+    display:inline-block
+    border:2
+        10px solid red
+        padding:10px
+        background-color:red
+}
+li{
+        display:inline;   
+}
+#navbar{
+    color:white
+        top:150px;
+}
+navbar-fixed-bottom {
+	  border
+	}
+#navbar{
+    display:block
+}
+
+
+
+
