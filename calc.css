@@ -1,0 +1,25 @@
+.inputs{
+    width:150px;
+}
+
+
+body {position:absolute;
+    left:250px;
+    top:0px;
+    color:white;
+}
+
+
+#submitButton{
+    padding:5px 15px;
+    height:50px;
+    width: 50px;
+    background-size:100%;
+    background-image: url('http://appcrawlr.com/thumbs/app/icon/87/2927387.png'); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    
+}
+
