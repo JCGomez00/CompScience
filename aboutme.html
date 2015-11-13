@@ -3,32 +3,55 @@
 <html>
 <head>
 
-    <style>
+    <style>li {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color:purple;
+}
+    
     p{
-        color:black
+        color:white;
     }
-        h3{
-            color:black
-        }
+        
         body {
-            background-image:url('http://www.okprairie.com/Images/About%20me%202%20button.jpg');
+            background-image:url('http://hdwallpaperslovely.com/wp-content/gallery/plain-blue-background-wallpaper/plain-backgrounds-hd-blue-767.jpg');
             padding:0;
             margin:0;
         }
         #header {
-            background-color:black;
+            background-color:blue;
             color:white;
-            text-align:center padding:5px;
-            top;
-            0px;
+            
             width:99%
         }
-    }
-    p {
-        background-color:black color:black
-    }
+
+   
     </style>
-    <title>Page Title</title>
+    <title>About Me</title>
 
     <link rel="stylesheet" type="text/css" href="Indexstyle.css">
     <link rel="stylesheet" type="text/css" href="navbar.css">
@@ -48,18 +71,22 @@
 
     <div id="section">
         <!--navbar-->
-<ul id="navbar">
+ <ul id="navbar">
     <li><a  href="index.html">Welcome 
 </a>   
     </li>
-    <li><a href="about.html">About Me </a>
+    <li><a href="aboutme.html">About Me </a>
     </li>
     <li><a href="Hardware.html">Hardware </a>
     </li>
     <li><a href="coding.html">HTML/CSS </a>
+    <li><a href= "info.Html">Info Page<a>
+        <li><a href="calc.Html">Calculator</a>
+        <li><a href="todolist.html">Todo List</a>
     </li>
+<br>
         <center>
-            <h3>About Me</h3> <h3>Who am I</h3>
+             <h3>Who am I</h3>
             <p>Hello my name is Jean and I will be telling you a little about myself.</p>
             <p>I am the creator of this website.</p>
             <p>I am a freshmen at Summit Prep High School.</p>

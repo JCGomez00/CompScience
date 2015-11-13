@@ -1,0 +1,44 @@
+body{
+    background-image:url('http://blog.hdwallsource.com/wp-content/uploads/2014/11/free-orange-light-wallpaper-34814-35618-hd-wallpapers.jpg')
+}
+h1{
+font-family: "Arial Black", Gadget, sans-serif;
+height:50px;
+ text-decoration: underline;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+   text-shadow: 2px 2px red;
+
+}
+li {
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a:link, a:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: white;
+    background-color:red ;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a:hover, a:active {
+    background-color: orange;
+}
+
+
