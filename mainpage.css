@@ -1,0 +1,16 @@
+<style type = "text/css">
+
+.add {
+	background-color:red ; 
+	font-family: Comic Sans MS; 
+	font-size: 9px; 
+	border: 0;
+}
+
+
+.body {
+    padding:0;
+    margin:0;
+    background-size:100%;
+    background-repeat: no-repeat;
+}

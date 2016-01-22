@@ -17,7 +17,7 @@ function doMath() {
     if  (dropdown.value == "+"){
         answer = parseInt(input1.value) + parseInt(input2.value);
         // input1.value=""
-        // input2.value=""
+        // input2.value.g=""
         display.innerHTML = answer;
     }
 
