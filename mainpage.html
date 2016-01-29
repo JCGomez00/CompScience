@@ -1,54 +1,268 @@
 <!DOCTYPE html>
 
-   <html>
-       <head>
-           
-           <link rel="stylesheet" type="text/css" href="mainpage.css">
-           <style>
-           h3{
-               color:white;
-               font-size:125px;
-              
-           }
-           #startButton{
-                width: 300px;
-                height: 100px;
-                font-size: 40px;
-                background-color:red;
-                border:2px groove black;
-           }
-          
-           </style>
-           
-         
-       
-       <br>
-        <center>
-            <h3>The Quiz</h3>
-       
-       <body id= backg style="background-image: url('http://cache3.asset-cache.net/xd/115983672.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE48012D44F321947F103D6D7111452E48A17331CEFF335C6C8452F02B00CB9B88AC9')">
+<html>
 
-          <input id="startButton" type="button" value="Ready??">
+<head>
 
-           
-           <script type="text/javascript" src="mainpage.js"></script>
-           
-       </body>
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-   </html>
+ 
+    <style>
+        #aContainer {
+            color: green;
+            display: none;
+            font-size: 40px;
+        }
+        
+        #question0 {
+            background-color: black;
+        }
+        
+        #question1 {
+            background-color: black;
+        }
+        
+        #question2 {
+            background-color: black;
+        }
+        
+        #question3 {
+            background-color: black;
+        }
+        
+        #question4 {
+            background-color: black;
+        }
+        
+        #question5 {
+            background-color: black;
+        }
+        
+        #question6 {
+            background-color: black;
+        }
+        
+        #question7 {
+            background-color: black;
+        }
+        
+        #question08 {
+            background-color: black;
+        }
+        
+        #question09 {
+            background-color: black;
+        }
+        
+        #qContainer {
+            color: red;
+            display: none;
+            text-shadow: 1px 1px white;
+            font-size: 20px;
+            padding: 2px;
+        }
+        
+        .answers {
+            color: white;
+            text-align: left;
+            width: 100px;
+            font-size: 30px;
+            text-shadow: 1px 1px red;
+            background-color: black;
+        }
+        
+        #container {
+            color: red;
+            display: none;
+            text-shadow: 1px 1px white;
+            font-size: 30px;
+        }
+        
+        body {
+            display: inline;
+        }
+        
+        #quizTitle {
+            color: white;
+            text-shadow: 1px 1px red;
+            font-size: 125px;
+        }
+        
+        #startButton {
+            width: 300px;
+            height: 100px;
+            font-size: 40px;
+            background-color: red;
+            border: 2px groove black;
+            text-shadow: 1px 1px white;
+            outline: dotted white;
+        }
+        
+        #submitButton {
+            width: 300px;
+            height: 100px;
+            font-size: 40px;
+            background-color: red;
+            border: 2px groove black;
+            text-shadow: 1px 1px white;
+            outline: dotted white;
+        }
+    </style>
+
+
+
+    <br>
+    <center>
+        <h3 id="quizTitle">Tricky Quiz</h3>
+
+        <body id="backg" style="background-image: url('http://cache3.asset-cache.net/xd/115983672.jpg?v=1&c=IWSAsset&k=2&d=62CA815BFB1CE48012D44F321947F103D6D7111452E48A17331CEFF335C6C8452F02B00CB9B88AC9')">
+
+            <input id="startButton" type="button" value="Ready??">
+            <div id="container">
+
+                <p id=question0> 1. Some months have 31 days, others have 30 days. How many have 28 days?</p>
+
+                <form class="answers">
+                    <input type="radio" name="anwser" value="1"> 1
+                    <br>
+                    <input type="radio" name="anwser" value="correct"> All
+                    <br>
+                    <input type="radio" name="anwser" value="3"> 3
+                    <br>
+                    <input type="radio" name="anwser" value="None"> None
+                </form>
+
+
+
+                </br>
+                <p id="question1">2. If there are 6 apples and you take away 4, how many do you have? </p>
+                <form class="answers">
+                    <input type="radio" name="anwser" value="6"> 6
+                    <br>
+                    <input type="radio" name="anwser" value="2"> 2
+                    <br>
+                    <input type="radio" name="anwser" value="correct"> 4
+                    <br>
+                    <input type="radio" name="anwser" value="0">0
+
+                </form>
+
+                </br>
+                <p id="question2">3.How many birthdays does average person have?</p>
+                <form class="answers">
+
+                    <input type="radio" name="anwser" value="50"> 50
+                    <br>
+                    <input type="radio" name="anwser" value="60"> 60
+                    <br>
+                    <input type="radio" name="anwser" value="correct"> 1
+                    <br>
+                    <input type="radio" name="anwser" value="80">80
+
+
+                </form>
+                </br>
+                <p id="question3"> 4. If you are running in a race and pass the person in second place, what position are you in?</p>
+                <form class="answers">
+
+                    <input type="radio" name="anwser" value="1st"> 1st
+                    <br>
+                    <input type="radio" name="anwser" value="correct"> 2nd
+                    <br>
+                    <input type="radio" name="anwser" value="3rd"> 3rd
+                    <br>
+                    <input type="radio" name="anwser" value="4th">4th
+
+
+
+
+
+
+                    </br>
+                </form>
+                <p id="question4"> 5. What occurs once in a minute, Twice in a moment but never in one thousand years?</p>
+                <form class="answers">
+
+                    <input type="radio" name="anwser" value="None"> None
+                    <br>
+                    <input type="radio" name="anwser" value="Star"> star
+                    <br>
+                    <input type="radio" name="anwser" value="Life"> Life
+                    <br>
+                    <input type="radio" name="anwser" value="correct"> M
+                    </br>
+                </form>
+                <p id="question5"> 6. What's heavier a ton of metal or a ton of cotton? </p>
+                <form class="answers">
+
+                    <input type="radio" name="anwser" value="Neither">None
+                    <br>
+                    <input type="radio" name="anwser" value="Cotton">cotton
+                    <br>
+                    <input type="radio" name="anwser" value="Metal">Metal
+                    <br>
+                    <input type="radio" name="anwser" value="correct">Both
+
+
+
+
+                </form>
+                <p id="question6">7. Adams Mom has three children, the first is called April, the second is called May, what is the third called?</p>
+                <form class="answers">
+
+                    <input type="radio" name="anwser" value="correct">Adam
+                    <br>
+                    <input type="radio" name="anwser" value="March">March
+                    <br>
+                    <input type="radio" name="anwser" value="June">June
+                    <br>
+                    <input type="radio" name="anwser" value="July">July
+
+                    </br>
+                </form>
+                <p id="question7">8. How many numbers from 1 - 100, which have the letter 'A' in their spellings?</p>
+                <form class="answers">
+                    <input type="radio" name="anwser" value="37">37
+                    <br>
+                    <input type="radio" name="anwser" value="1">1
+                    <br>
+                    <input type="radio" name="anwser" value="47">47
+                    <br>
+                    <input type="radio" name="anwser" value="correct">None
+
+                </form>
+                <p id="question8">9.What can travel around the world while staying in a corner? </p>
+                <form class="answers">
+                    <input type="radio" name="anwser" value="plane">plane
+                    <br>
+                    <input type="radio" name="anwser" value="correct">stamp
+                    <br>
+                    <input type="radio" name="anwser" value="boat">boat
+                    <br>
+                    <input type="radio" name="anwser" value="None">None
+
+
+                </form>
+                <p id="question9">10.What is at the end of a rainbow?? </p>
+                <form class="answers">
+                    <input type="radio" name="anwser" value="Gold">Gold
+                    <br>
+                    <input type="radio" name="anwser" value="colors">colors
+                    <br>
+                    <input type="radio" name="anwser" value="cash">cash
+                    <br>
+                    <input type="radio" name="anwser" value="correct">W
+                </form>
+
+                <input id="submitButton" type="button" value="Submit">
+            </div>
+
+            <div id=qContainer>
+
+                <script type="text/javascript" src="mainpage.js"></script>
+
+
+
+        </body>
+
+
+
+</html>
