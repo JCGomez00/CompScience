@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div id="section">
+        <!--navbar-->
+        <ul id="navbar">
+            <li><a href="index.html">Welcome 
+</a>
+            </li>
+            <li><a href="aboutme.html">About Me </a>
+            </li>
+            <li><a href="Hardware.html">Hardware </a>
+            </li>
+            <li><a href="coding.html">HTML/CSS </a>
+                <li><a href="info.Html">Info Page<a>
+        <li><a href="calc.Html">Calculator</a>
+                    <li><a href="todolist.html">Todo List</a>
+                        <li><a href="mainpage.html">Quiz</a>
+                            <li><a href="vindinium.html">Vindinium</a></li>
+                        </li>
+
+</head>
+<style type="text/css">
+    p {
+        color: white;
+    }
+    
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 125px;
+        text-shadow: 1px 1px red;
+    }
+    
+    h2 {
+        color: red;
+        font-size: 50px;
+    }
+    
+    h3 {
+        color: red;
+    }
+    
+    h4 {
+        color: red;
+    }
+    
+    h5 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h6 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h7 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h8 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h9 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h10 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    h11 {
+        color: red;
+        font-size: 50px;
+    }
+    
+    h12 {
+        color: red;
+        font-size: 20px;
+    }
+    
+    a:link,
+    a:visited {
+        display: block;
+        width: 120px;
+        font-weight: bold;
+        color: red;
+        background-color: black;
+        text-align: center;
+        padding: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    a:hover,
+    a:active {
+        background-color: white;
+    }
+    
+    li {
+        display: inline;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    body {
+        background-color: black;
+    }
+</style>
+
+<center>
+
+    <center>
+
+        <h1> Vindinium  </h1>
+        <h2>My code</h2>
+        <p> // location of bots</p>
+        <p>var enemyBots = [];</p>
+        <p>if (bot.yourBot.id != 1) enemyBots.push(bot.bot1);</p>
+        <p> if (bot.yourBot.id != 2) enemyBots.push(bot.bot2);</p>
+        <p> if (bot.yourBot.id != 3) enemyBots.push(bot.bot3);</p> if (bot.yourBot.id != 3) enemyBots.push(bot.bot3);
+        <p>if (bot.yourBot.id != 4) enemyBots.push(bot.bot4);</p>
+
+        <p> //location of enemy mines</p>
+
+
+        <p>var enemyMines = [];</p>
+        <p> if (bot.yourBot.id != 1) enemyMines = enemyMines.concat(bot.bot1.mines);</p>
+        <p>if (bot.yourBot.id != 2) enemyMines = enemyMines.concat(bot.bot2.mines);</p>
+        <p>if (bot.yourBot.id != 3) enemyMines = enemyMines.concat(bot.bot3.mines);</p>
+        <p>if (bot.yourBot.id != 4) enemyMines = enemyMines.concat(bot.bot4.mines);</p>
+        <p> var allMines = enemyMines.concat(bot.freeMines);</p>
+        <br>
+        <h3>This is the first part of my code that I created when I made my bot. This code contains the location of every bot and every enemy mines in the map. This allows the my bot to know and to have some type thinking when searching for bots to attack and stealing mines. The last variable I made in this section its for my to attack every free mines it seeks.</h3>
+        <br>
+        <p> var closestBot = enemyBots[0];</p>
+        <p> for (i = 0; i
+            < enemyBots.length; i++) { </p>
+                <p> if (bot.findDistance(myPos, closestBot.posArray) > bot.findDistance(myPos, enemyBots[i].posArray)) { </p>
+                <p> closestBot = enemyBots[i];</p>
+                <p>}</p>
+
+
+                <p>}</p>
+                <h4> This is my second piece of my code. This allows my bot to know the closest bot around him and the distance. Bot.find distance allows it to know the distance between closest bot. ClosestBot allows my bot to know the closest bot. ClosestBot = enemyBots means that any bot that is close to my bot is a enemy and not an ally. </h4>
+                <br>
+                <p> //bot goes to tavern after 50 health</p>
+                <p> var task;</p>
+
+                <p> if (bot.yourBot.life
+                    < 50) {</p>
+                        <p> task = "Taverns";</p>
+                        <p>}</p>
+
+                        <p>//bot attacks richest bot </p>
+                        <p> else if (bot.data.game.turn > 230) {</p>
+                        <p> task = "attack";</p>
+                        <p> }</p>
+                        <p> else {</p>
+
+                        <p> task = "freemines";</p>
+                        <p> }</p>
+
+                        <h5> This is the third piece of my code. Var task means that any task I apply to my bot, it will do that task. bot.yourBot.life<50 means that if my bot reaches any health lower than 50 it will go to the tavern.By appling the task Tavern my bot will go to the mine with low in health. bot.data.game.turn>230 mean that any round that is higher than 230 my bot will go after the richest bot in the game. By appling the task attack my bot will attack the richest bot.The last task I applied was freemines because after my bot attacks the richest bot he will go after free mines.</50></h5>
+                        <br>
+                        <p>// this set the task for attacking richest bot</p>
+                        <p> if (task === "attack") {</p>
+                        <p> var richerBot = enemyBots[0];</p>
+                        <p> for (i = 0; i
+                            < enemyBots.length; i++) {</p>
+                                <p> if (bot.yourBot.mineCount
+                                    < enemyBots[i].mineCount) {</p>
+                                        <p> richerBot = enemyBots[i];</p>
+                                        <p> }</p>
+                                        <p>}</p>
+                                        <p> console.log("Attacking Rich Boy");</p>
+                                        <p> myDir = bot.findPath(myPos , [richerBot.pos.x , richerBot.pos.y]);</p>
+
+                                        <p>}</p>
+                                        <h6>This is my fourth piece of my code. This is the code that my bot attack other bots. I applied the task attack so it can attack the richest bot. bot.yourBot.mineCount< enemyBot[i].mineCount means any bot in the map than has more mines than me after round 230, my bot will go after.Richerbot = enemyBot[i] mean than richerBot is the same as enemyBots. Console log means that the action of attacking the richest bot is getting push and it is working. bot.findPath means that it find the path to the richest bot.</h6>
+                                        <br>
+                                        <p> //goes after anymines</p>
+                                        <p> if (task === "freemines") {</p>
+                                        <p> var closestMine =allMines[0];</p>
+                                        <p> for (i = 0; i
+                                            < allMines.length; i++) {</p>
+                                                <p> if (bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, allMines[i])) {</p>
+                                                <p> closestMine = allMines[i];</p>
+                                                <p> }</p>
+                                                <p> }</p>
+
+
+                                                <p> console.log("All Mines!");</p>
+                                                <p> myDir = bot.findPath(myPos, closestMine);</p>
+                                                <p>}</p>
+                                                <h7>This is the fifth piece of my code. I applied the task equal to free mines so my bot goes after any mines that are free. I added variable that makes closetMine and allMines equal to each other. bot.findDistance
+                                                    finds the location of the nearest mine to my bot.Than I use the variable that made and put it to use in my if statemnet. Finally I console log this piece of code so the code can run and work.bot.findPath
+                                                    makes it so my bot finds the pathwaty to closet mine. </h7>
+                                                <br>
+                                                <p>// location of the taverns</p>
+                                                <p> if (task === "Taverns") {</p>
+                                                <p> var closestTavern = bot.taverns[0];</p>
+                                                <p> for (i = 0; i
+                                                    < bot.taverns.length; i++) {</p>
+                                                        <p> if (bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {</p>
+
+                                                        <p> closestTavern = bot.taverns[i];</p>
+                                                        <p> }</p>
+                                                        <p>}</p>
+                                                        <p> console.log("Going to Tavern!");</p>
+                                                        <p> myDir = bot.findPath(myPos, closestTavern)</p>
+                                                        <p>}</p>
+                                                        <h8>This is my sixth piece to my code. This is the part of my code where my bot goes for taverns. I applied a task which makes my bot go after Taverns. I made a new variable that makes closest taven
+                                                            equal to bot.taverns. In my if statemnet I put it so my bot finds the closest tavern around him when he is low in health. It also find the distance between him and the tavern. Than I applied
+                                                            the variable that I made so that code can function in my code. Finally I console log it so the whole code can function. bot.findPath makes my bot know which path to take when going for the taverns.
+                                                        </h8>
+                                                        <p> // This Code Sets your direction based on myDir. </p>
+                                                        <p> if (myDir === "none" || myDir === undefined) {</p>
+                                                        <p> console.log("Going Random!");</p>
+                                                        <p> var rand = Math.floor(Math.random() * 4);</p>
+                                                        <p> var dirs = ["north", "south", "east", "west"];</p>
+                                                        <p> bot.goDir = dirs[rand];</p>
+                                                        <p> }</p>
+                                                        <p> else {</p>
+                                                        <p> bot.goDir = myDir;</p>
+                                                        <p> }</p>
+
+                                                        <p> resolve();</p>
+                                                        <p> });</p>
+                                                        <p>};</p>
+                                                        <p>bot.runGame();</p>
+                                                        <h9>This is the final piece of my code. In my if statement I set myDir equal to none so my code would not crash when running the code. Than I console log that code so when my bot doesn't have anythind
+                                                            to do it will go random. I made a variable that gave the directions to my bot to go. Than I made an esle statement which made bot.goDir and myDir are equal to each other. Than finally I bot.runGame
+                                                            so my entire code can run on vindinium.</h9>
+
+                                                        <br>
+
+                                                        <h10> My bot currently has 4 abilities it can do while playing on vindinium. It can currently go to tavern to get health, attack enemy bots, go capture mines, and attacks the richest person.</h10>
+                                                        <br>
+                                                        <br>
+
+                                                        <h11>AI Bot</h11>
+                                                        <br>
+                                                        <br>
+                                                        <h12>When I first started making my AI Bot, I did not have any idea how to start the code. Than Mr. Hesby gaves us a code starter that had the main parts of the code. We just added code that we wanted
+                                                            that our bot wanted to do. When I first started making my code it was diffcult to do because I nver done AI Bot. It was something new for me. Then after after Mr.Hesby expkain and working with
+                                                            friends it became much easier to make. By making my very own AI Bot I learned that making AI bot are much harder to make. That their goes a lot of trial and error that happens when making the
+                                                            bot. This was one of the hardest project I had to do for this class but it was also one of most fun. </h12>
+                                                        <br>
+                                                        <img src="http://stratosprovatopoulos.com/wp-content/uploads/2014/02/Vindinium.jpg" </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

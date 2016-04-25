@@ -9,24 +9,23 @@
 
 #navbar{
     text-align:left;
-    top:;
+    top:6;
 }
 #navbar li{
     display:inline-block
-    border:2
-        10px solid red
-        padding:10px
-        background-color:red
+        10px solid red;
+        padding:10px;
+        background-color:red;
 }
 li{
         display:inline;   
 }
 #navbar{
-    color:white
+    color:white;
         top:150px;
 }
 navbar-fixed-bottom {
-	  border
+	  border:5p;
 	}
 #navbar{
     display:block
