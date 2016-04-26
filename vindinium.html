@@ -7,7 +7,7 @@
         <ul id="navbar">
             <li><a href="index.html">Welcome 
 </a>
-            </li>
+            </li>S
             <li><a href="aboutme.html">About Me </a>
             </li>
             <li><a href="Hardware.html">Hardware </a>
@@ -86,6 +86,16 @@
         font-size: 20px;
     }
     
+    h13 {
+        color: red;
+        font-size: 50px;
+    }
+    
+    h14 {
+        color: red;
+        font-size: 20px;
+    }
+    
     a:link,
     a:visited {
         display: block;
@@ -147,7 +157,7 @@
         <p>if (bot.yourBot.id != 4) enemyMines = enemyMines.concat(bot.bot4.mines);</p>
         <p> var allMines = enemyMines.concat(bot.freeMines);</p>
         <br>
-        <h3>This is the first part of my code that I created when I made my bot. This code contains the location of every bot and every enemy mines in the map. This allows the my bot to know and to have some type thinking when searching for bots to attack and stealing mines. The last variable I made in this section its for my to attack every free mines it seeks.</h3>
+        <h3>This is the first part of my code that I created when I made my bot. This code contains the location of every bot and every enemy mines on the map. This allows the my bot to know and to have some type thinking when searching for bots to attack and stealing mines. The last variable I made in this section its for my to attack every free mines it seeks.</h3>
         <br>
         <p> var closestBot = enemyBots[0];</p>
         <p> for (i = 0; i
@@ -158,7 +168,7 @@
 
 
                 <p>}</p>
-                <h4> This is my second piece of my code. This allows my bot to know the closest bot around him and the distance. Bot.find distance allows it to know the distance between closest bot. ClosestBot allows my bot to know the closest bot. ClosestBot = enemyBots means that any bot that is close to my bot is a enemy and not an ally. </h4>
+                <h4> This is my second piece of my code. This allows my bot to know the closest bot around him and the distance. Bot.find distance allows it to know the distance between the closest bot. ClosestBot allows my bot to know the closest bot. ClosestBot = enemyBots means that any bot that is close to my bot is an enemy and not an ally. </h4>
                 <br>
                 <p> //bot goes to tavern after 50 health</p>
                 <p> var task;</p>
@@ -177,7 +187,7 @@
                         <p> task = "freemines";</p>
                         <p> }</p>
 
-                        <h5> This is the third piece of my code. Var task means that any task I apply to my bot, it will do that task. bot.yourBot.life<50 means that if my bot reaches any health lower than 50 it will go to the tavern.By appling the task Tavern my bot will go to the mine with low in health. bot.data.game.turn>230 mean that any round that is higher than 230 my bot will go after the richest bot in the game. By appling the task attack my bot will attack the richest bot.The last task I applied was freemines because after my bot attacks the richest bot he will go after free mines.</50></h5>
+                        <h5> This is the third piece of my code. Var task means that any task I apply to my bot, it will do that task. bot.yourBot.life<50 means that if my bot reaches any health lower than 50 it will go to the tavern.By appling the task Tavern my bot will go to the tavern when with low in health. bot.data.game.turn>230 mean that any round that is higher than 230 my bot will go after the richest bot in the game. By appling the task attack my bot will attack the richest bot.The last task I applied was freemines because after my bot attacks the richest bot he will go after free mines.</50></h5>
                         <br>
                         <p>// this set the task for attacking richest bot</p>
                         <p> if (task === "attack") {</p>
@@ -193,7 +203,7 @@
                                         <p> myDir = bot.findPath(myPos , [richerBot.pos.x , richerBot.pos.y]);</p>
 
                                         <p>}</p>
-                                        <h6>This is my fourth piece of my code. This is the code that my bot attack other bots. I applied the task attack so it can attack the richest bot. bot.yourBot.mineCount< enemyBot[i].mineCount means any bot in the map than has more mines than me after round 230, my bot will go after.Richerbot = enemyBot[i] mean than richerBot is the same as enemyBots. Console log means that the action of attacking the richest bot is getting push and it is working. bot.findPath means that it find the path to the richest bot.</h6>
+                                        <h6>This is my fourth piece of my code. This is the code that my bot attack other bots. I applied the task attack so it can attack the richest bot. bot.yourBot.mineCount< enemyBot[i].mineCount means that any bot in the map than has more mines than me after round 230, my bot will go after.Richerbot = enemyBot[i] mean that richerBot is the same as enemyBots. Console log means that the action of attacking the richest bot is getting push and it is working. bot.findPath means that it find the path to the richest bot.</h6>
                                         <br>
                                         <p> //goes after anymines</p>
                                         <p> if (task === "freemines") {</p>
@@ -211,7 +221,7 @@
                                                 <p>}</p>
                                                 <h7>This is the fifth piece of my code. I applied the task equal to free mines so my bot goes after any mines that are free. I added variable that makes closetMine and allMines equal to each other. bot.findDistance
                                                     finds the location of the nearest mine to my bot.Than I use the variable that made and put it to use in my if statemnet. Finally I console log this piece of code so the code can run and work.bot.findPath
-                                                    makes it so my bot finds the pathwaty to closet mine. </h7>
+                                                    makes it so my bot finds the pathway to closet mine. </h7>
                                                 <br>
                                                 <p>// location of the taverns</p>
                                                 <p> if (task === "Taverns") {</p>
@@ -245,7 +255,7 @@
                                                         <p> });</p>
                                                         <p>};</p>
                                                         <p>bot.runGame();</p>
-                                                        <h9>This is the final piece of my code. In my if statement I set myDir equal to none so my code would not crash when running the code. Than I console log that code so when my bot doesn't have anythind
+                                                        <h9>This is the final piece of my code. In my if statement I set myDir equal to none so my code would not crash when running the code. Then I console log that code so when my bot doesn't have anything
                                                             to do it will go random. I made a variable that gave the directions to my bot to go. Than I made an esle statement which made bot.goDir and myDir are equal to each other. Than finally I bot.runGame
                                                             so my entire code can run on vindinium.</h9>
 
@@ -258,14 +268,20 @@
                                                         <h11>AI Bot</h11>
                                                         <br>
                                                         <br>
-                                                        <h12>When I first started making my AI Bot, I did not have any idea how to start the code. Than Mr. Hesby gaves us a code starter that had the main parts of the code. We just added code that we wanted
-                                                            that our bot wanted to do. When I first started making my code it was diffcult to do because I nver done AI Bot. It was something new for me. Then after after Mr.Hesby expkain and working with
-                                                            friends it became much easier to make. By making my very own AI Bot I learned that making AI bot are much harder to make. That their goes a lot of trial and error that happens when making the
-                                                            bot. This was one of the hardest project I had to do for this class but it was also one of most fun. </h12>
+                                                        <h12>When I first started making my AI Bot, I did not have any idea how to start the code. Then Mr. Hesby gaves us a code starter that had the main parts of the code. We just added code that we wanted
+                                                             our bot wanted to do. When I first started making my code it was diffcult to do because I nver done AI Bot. It was something new for me. Then after after Mr.Hesby explain and working with
+                                                            friends it became much easier to make. By making my very own AI Bot I learned that making AI bot are much harder to make. That there is a lot of trial and error that happens when making the
+                                                            bot. When I finished my bot I was really impressed with myself,but I did notice that my bot had some flaws.z This was one of the hardest project I had to do for this class but it was also one of most fun. </h12>
                                                         <br>
                                                         <img src="http://stratosprovatopoulos.com/wp-content/uploads/2014/02/Vindinium.jpg" </center>
 
-
+                                                        <br>
+                                                        <h13>How to Play</h13>
+                                                        <br>
+                                                        <br>
+                                                        <h14>Vindinium is online video game where you will make an AI Bot and fight other bots for gold. To play this games you will first have to make a code of your bot in javascript. While making your code
+                                                            you have to program your bot however you want, to your liking. The objective of the game is to have the most gold than everybody else. To collect gold you will have to capture mines on the map.
+                                                            Then who ever has the most gold overall with become victor!!!</h14>
 
 
 
